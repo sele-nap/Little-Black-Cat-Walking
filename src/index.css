@@ -30,16 +30,6 @@ body {
   background: url("./assets/cat_tiles.png") 0 0 no-repeat;
 }
 
-.sitting {
-  animation: sit-animation 2s steps(6) infinite;
-  background: url("./assets/cat_tiles.png") 0 0 no-repeat;
-}
-
-.walk-then-sit {
-  animation: walk-animation 2s steps(12) 1, sit-animation 3s 2s steps(6) 1;
-  background: url("./assets/cat_tiles.png") 0 0 no-repeat;
-}
-
 @keyframes walk-animation {
   from {
     background-position: 0 0;
@@ -57,15 +47,5 @@ body {
 
   to {
     margin-left: -120%;
-  }
-}
-
-@keyframes sit-animation {
-  from {
-    background-position: -400px 0;
-  }
-
-  to {
-    background-position: -400px -1200px;
   }
 }
